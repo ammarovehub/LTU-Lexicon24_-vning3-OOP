@@ -29,11 +29,26 @@ namespace Encapsulation
             get => fName;
             set
             {
-                if (string.IsNullOrWihteSpace(value) || value.Length < 2 || value.Length > 10)
+                if (string.IsNullOrWhiteSpace(value) || value.Length < 2 || value.Length > 10)
                    throw new ArgumentException("First name must be between 2 and 10 characters.");
                 fName = value;
             }
         }
+        public string LName 
+        {
+            get => lName;
+            set 
+            {
+                if (string.IsNullOrWhiteSpace(value) || value.Length < 3 || value.Length > 15)
+                    throw new ArgumentException("Last name must be between 3 and 15 characters.");
+                lName = value;
+            }
+           
+
+        }
+
+        public double Height { get => height; set => height = value; }
+        public double Weight { get => weight; set => weight = value; }
     }
 
 }
