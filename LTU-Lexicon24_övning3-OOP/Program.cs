@@ -1,6 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
+using Encapsulation;
 
-namespace Encapsulation
-{
-    class Program { }
-}
+class Program { }
