@@ -7,6 +7,6 @@ class Program
     static void Main(string[] args) 
     {
         PersonHandler  handler = new personHandler();
-        Person person = handler.GetType.Invoke(handler);
+        Person person = handler.CreatePerson(age, fname, lname, double height, double weight);
     }
 }
