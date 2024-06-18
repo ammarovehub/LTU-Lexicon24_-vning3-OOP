@@ -6,15 +6,22 @@ using System.Threading.Tasks;
 
 namespace Encapsulation
 {
-    internal class Person
+    public class Person()
     {
-        public class Person()
-        {
             private int age;
             private string fName;
             private string lName;
             private double height;
             private double weight;
-        }
+
+            public int Age
+            {
+                get => age;
+                set
+                {
+                if (value <= 0) throw new ArgumentException("Age must be greater than 0.");
+                    age = value;
+                }
+            }
     }
 }
