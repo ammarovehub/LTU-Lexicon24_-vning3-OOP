@@ -29,7 +29,9 @@ namespace Encapsulation
             get => fName;
             set
             {
-                if (!string.IsNullOrWihteSpace(value);
+                if (string.IsNullOrWihteSpace(value) || value.Length < 2 || value.Length > 10)
+                   throw new ArgumentException("First name must be between 2 and 10 characters.");
+                fName = value;
             }
         }
     }
