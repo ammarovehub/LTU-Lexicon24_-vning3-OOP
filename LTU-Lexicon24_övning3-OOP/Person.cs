@@ -8,20 +8,30 @@ namespace Encapsulation
 {
     public class Person()
     {
-            private int age;
-            private string fName;
-            private string lName;
-            private double height;
-            private double weight;
+        private int age;
+        private string fName;
+        private string lName;
+        private double height;
+        private double weight;
 
-            public int Age
+        public int Age
+        {
+            get => age;
+            set
             {
-                get => age;
-                set
-                {
                 if (value <= 0) throw new ArgumentException("Age must be greater than 0.");
-                    age = value;
-                }
+                age = value;
             }
+        }
+
+        public string FName
+        {
+            get => fName;
+            set
+            {
+                if (!string.IsNullOrWihteSpace(value);
+            }
+        }
     }
+
 }
