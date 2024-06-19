@@ -11,12 +11,12 @@
             pers.Age = age;
         }
 
-        public void SetHeight(Person pers, int height) 
+        public void SetHeight(Person pers, double height) 
         {
             pers.Height = height;
         }
 
-        public void SetWeight(Person pers, int weight)
+        public void SetWeight(Person pers, double weight)
         {
             pers.Weight = weight;
         }
