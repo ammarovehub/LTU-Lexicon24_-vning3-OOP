@@ -30,12 +30,12 @@ using Encapsulation;
                 Console.WriteLine($"Error updating person2: {ex.Message}");
             }
 
-            PrintPersonDetails(person1);
-            PrintPersonDetails(person2);
+            PrintPersonDetails(person1 ,1);
+            PrintPersonDetails(person2, 2);
         }
-        static void PrintPersonDetails(Person person)
+        static void PrintPersonDetails(Person person, int personNumber)
         {
-            Console.WriteLine($"Updated Person Details: FirstName={person.FName}, LastName={person.LName}, Age={person.Age}, Height={person.Height}, Weight={person.Weight}");
+            Console.WriteLine($"Updated Person {personNumber} Details: FirstName={person.FName}, LastName={person.LName}, Age={person.Age}, Height={person.Height}, Weight={person.Weight}");
         }
     }
         
