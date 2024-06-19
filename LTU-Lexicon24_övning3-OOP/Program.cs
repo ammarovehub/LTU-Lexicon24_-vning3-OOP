@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args) 
     {
-        PersonHandler  handler = new personHandler();
-        Person person = handler.CreatePerson(30, Ammar, Jamous, 167, 70);
+        PersonHandler  handler = new PersonHandler();
+        Person person = handler.CreatePerson(30, "Ammar", "Jamous", 1.67, 70);
     }
 }
