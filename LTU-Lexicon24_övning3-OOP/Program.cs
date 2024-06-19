@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using Encapsulation;
 
     class Program
-    {
+    {   
+        //Encapsulation
         static void Main(string[] args)
         {
             PersonHandler handler = new PersonHandler();
@@ -34,7 +35,7 @@ using Encapsulation;
         }
         static void PrintPersonDetails(Person person)
         {
-            Console.WriteLine($"Person Details: Age={person.Age}, FirstName={person.FName}, LastName={person.LName}, Height={person.Height}, Weight={person.Weight}");
+            Console.WriteLine($"Updated Person Details: FirstName={person.FName}, LastName={person.LName}, Age={person.Age}, Height={person.Height}, Weight={person.Weight}");
         }
     }
         
