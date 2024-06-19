@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Encapsulation
 {
-    public class Person()
+    public class Person
     {
         private int age;
         private string fName;
@@ -47,8 +47,16 @@ namespace Encapsulation
 
         }
 
-        public double Height { get => height; set => height = value; }
-        public double Weight { get => weight; set => weight = value; }
+        public double Height
+        {
+            get => height;
+            set => height = value;
+        }
+        public double Weight
+        {
+            get => weight;
+            set => weight = value;
+        }
     }
 
 }
