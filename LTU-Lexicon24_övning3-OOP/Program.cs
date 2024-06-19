@@ -7,9 +7,9 @@ using Encapsulation;
         static void Main(string[] args)
         {
             PersonHandler handler = new PersonHandler();
-            Person person = handler.CreatePerson(30, "Ammar", "Jamous", 1.67, 70);
             try
             {
+                Person person = handler.CreatePerson(30, "Ammar", "Jamous", 1.67, 70);
                 handler.SetAge(person, 10);
             }
             catch (ArgumentException ex)
