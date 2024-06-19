@@ -8,6 +8,15 @@
         private double height;
         private double weight;
 
+        public Person(int age, string fName, string lName, double height, double weight)
+        {
+            Age = age;
+            FName = fName;
+            LName = lName;
+            Height = height;
+            Weight = weight;
+        }
+
         public int Age
         {
             get => age;
